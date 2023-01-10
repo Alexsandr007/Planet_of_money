@@ -1,0 +1,13 @@
+.display_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.internal_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

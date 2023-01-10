@@ -1,0 +1,243 @@
+.referrals {
+    background: #04071F;
+    height: 100vh;
+    width: 100vw;
+}
+
+.referrals__content {
+    height: 100%;
+}
+
+.referrals__inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** Sidebar Copy **/
+.personal__sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+}
+
+.personal-link {
+    display: flex;
+    column-gap: 17px;
+}
+
+.personal-link__icon {
+    padding: 7px;
+}
+
+.personal-link__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.personal-link__active {
+    background: linear-gradient(135deg, #7A10FF 0%, #46BCF4 100%);
+    border-radius: 5px;
+}
+
+/* Spaces between sidebar and main bar */
+@media screen and (min-width: 1200px) {
+    .referrals__inner {
+        column-gap: 114px;
+    }
+}
+
+/* End Sidebar */
+
+.referrals-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.referrals__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .referrals__block {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .referrals__block {
+        width: 900px;
+    }
+}
+
+/* Progress Bar Copy */
+.balance-circle .balance-circle__inner {
+    position: relative;
+    height: 180px; /* Diff */
+    width: 180px; /* Diff */
+    border-radius: 50%;
+    cursor: default;
+}
+
+.balance-circle .balance-circle__inner .balance-circle__box span {
+    position: absolute;
+    top: 50%;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    left: 50%;
+}
+
+.balance-circle .balance-circle__inner .balance-circle__box {
+    height: 100%;
+    width: 100%;
+    background: #04071F;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.75);
+    transition: all 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/* End Progress bar */
+
+.referrals__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.referrals__text {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.referrals__matrix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.referrals-info {
+    position: relative;
+}
+
+.referrals-info table {
+    position: relative;
+}
+
+.referrals-info th {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.referrals-info__name {
+    margin-top: 20px;
+}
+
+.referrals-info::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    top: 30px;
+    background: white;
+    display: block;
+    position: absolute;
+}
+
+.referrals-info__name {
+    display: flex;
+    column-gap: 23px;
+}
+
+.referrals-info__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.referrals-info__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.referrals-info__register {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.referrals-info__users {
+    display: flex;
+    column-gap: 5px;
+}
+.referrals-info__users span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.referrals-info__email {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.referrals-info__status {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.referrals-info__status_not-active {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #FF6060;
+}
+
+.referrals-info__status_info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,125 @@
+
+/* Main Content */
+.logout__content {
+    position: relative;
+    z-index: -1; /* Для того чтобы уведомления выводились */
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(50% 158.02% at 100% 100%, rgba(255, 16, 145, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(74.63% 121.07% at 0% 0%, rgba(255, 0, 92, 0.2) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(50% 50% at 50% 50%, rgba(0, 209, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #04071F;
+}
+
+.logout__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logout__block {
+    background: #04071F;
+    border-radius: 10px;
+    width: 550px;
+    height: 192px;
+    position: relative;
+    z-index: 0;
+}
+
+.logout__block_main {
+    position: relative;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 0; /* Для того чтобы border отображался */
+    height: calc(100% - 25px - 25px); /* Отнимаем padding */
+    width: calc(100% - 20px - 20px);
+    border-radius: 10px;
+    background: #04071F;
+}
+
+.logout__block::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    right: -2px;
+    left: -2px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7A10FF 0%, #46BCF4 100%);
+    z-index: -1;
+}
+
+.logout__block_padding {
+    padding: 20px 25px;
+}
+
+.logout__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.logout__btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logout__stay, .logout__btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    position: relative;
+    border: none;
+    border-radius: 4px;
+    background: #04071F;
+    cursor: pointer;
+}
+
+.logout__stay .btn__text, .logout__btn .btn__text {
+    position: relative;
+    z-index: 5;
+}
+
+.logout__stay::before, .logout__btn::before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    transition: opacity .3s ease-in;
+    background: linear-gradient(90deg, #7A10FF 0%, #46BCF4 100%);
+    opacity: 0;
+}
+
+.logout__stay:hover::before, .logout__btn:hover::before {
+    opacity: 1;
+}
+
+.logout__stay::after, .logout__btn::after {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #7A10FF 0%, #46BCF4 100%);
+    z-index: -1;
+    content: '';
+}
+
+.logout__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120.19%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.logout__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120.19%;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,534 @@
+/* Personal Content */
+.personal {
+    background: #04071F;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -5;
+}
+
+.header_settings {
+    width: 100%;
+    z-index: 2;
+    transition: background .3s ease;
+    position: fixed;
+    padding: 17px 0;
+}
+
+@media screen and (max-width: 720px) {
+    .header_settings {
+        position: sticky !important;
+        top: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.personal__content {
+    height: 100%;
+}
+
+.personal__inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal__sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+}
+
+.personal-link {
+    display: flex;
+    column-gap: 17px;
+}
+
+.personal-link__icon {
+    padding: 7px;
+}
+
+.personal-link__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.personal-link__active {
+    background: linear-gradient(135deg, #7A10FF 0%, #46BCF4 100%);
+    border-radius: 5px;
+}
+
+
+/* Spaces between sidebar and main bar */
+@media screen and (min-width: 1200px) {
+    .personal__inner {
+        column-gap: 50px;
+    }
+}
+
+/* Personal Info */
+.settings {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 55%;
+    position: relative;
+}
+
+.settings__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.settings__image-change {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.settings__image-change_img {
+    width: 124px;
+    height: 124px;
+    margin-top: 19px;
+}
+
+.settings__image-change_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 12px;
+    margin-left: 50px;
+}
+
+
+.settings__image-change__text_size {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+.settings__password {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.settings__password_installation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.settings__password_input {
+    width: 48%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(16, 16, 16, 0.7);
+    border-radius: 4px;
+}
+
+.settings__password_btn-case_high {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.settings__password_input-case_low {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.settings__password_btn-case_high .settings__password_btn {
+    width: 48%;
+    padding: 10px 0px;
+}
+
+.settings__password_btn-case_low {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-top: 15px;
+
+}
+
+.settings__password_btn-case_low .settings__password_btn {
+    width: 48%;
+}
+
+.settings__password_input-case_low .settings__password_input {
+    height: 36px;
+}
+
+.settings__password_question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+}
+
+.settings__password_question-border {
+    height: 15px;
+    width: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+}
+
+.settings__password_question-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.settings__password_btn {
+    padding: 10px 17px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+    border-image-source: linear-gradient(90deg, #7A10FF 0%, #46BCF4 100%);
+    border-image-slice: 1;
+    line-height: 19px;
+    color: #0e1231;
+    position: relative;
+    border: none;
+    background: #04071F;
+    border-radius: 4px;
+}
+
+.settings__password_btn .btn__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.settings__password_btn::before {
+    position: absolute;
+    content: '';
+    padding: 10px 30px;
+    inset: 0;
+    background: linear-gradient(90deg, #7A10FF 0%, #46BCF4 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.25s linear;
+    border-radius: 4px;
+}
+
+.settings__password_btn::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(90deg, #7A10FF 0%, #46BCF4 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.settings__password_btn:hover::before {
+    opacity: 1;
+}
+
+.settings__password_btn:hover {
+    outline: solid rgba(255, 255, 255, 0) 2px;
+    color: #FFFFFF;
+}
+
+.btn_mobile {
+    display: none;
+}
+
+.platforms-structures__search-programm_btn_mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings__image-change_text-mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 12px;
+    margin-left: 50px;
+}
+
+.settings__image-change__text_title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.settings__image-change__text_email {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.settings__image-change_img-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 720px) {
+    .personal__inner {
+        column-gap: 40px;
+        padding: 0 40px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 720px) {
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 720px) {
+    .platforms {
+        width: 75%;
+    }
+
+}
+
+@media screen and (min-width: 720px) and (max-width: 800px) {
+
+}
+
+/* Spaces balance */
+@media screen and (min-width: 1440px) {
+
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        position: sticky !important;
+        top: 0px !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .personal__sidebar {
+        display: none;
+    }
+
+    .settings {
+        flex-direction: column;
+        padding: 0 16px;
+        width: 95%;
+    }
+
+    .settings__image-change_text {
+        display: none;
+    }
+
+    .settings__image-change_text-mobile {
+        display: flex;
+    }
+
+    .settings__image-change_img {
+        display: none;
+    }
+
+    .settings__image-change_img-mobile {
+        display: flex;
+        margin-top: 19px;
+    }
+
+    .settings__password_question {
+        display: none;
+    }
+
+    .settings__password_input {
+        width: 100%;
+        height: 82px;
+    }
+
+    .settings__password_btn-case_high .settings__password_btn {
+        width: 100%;
+        height: 82px;
+    }
+
+    .settings__password_btn-case_high {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .settings__password_btn .btn__text {
+        height: 82px;
+    }
+
+
+    .settings__password_input-case_low .settings__password_input {
+        height: 82px;
+    }
+
+    .settings__password_input-case_low {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .settings__password_btn-case_low {
+        margin-bottom: 145px;
+    }
+
+    .settings__password_btn-case_low .settings__password_btn {
+        width: 100%;
+    }
+
+    .settings__password {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    .settings__password_input {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .settings__password_btn .btn__text {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .auth-header {
+        flex-direction: row-reverse;
+    }
+
+    .header__inner {
+        justify-content: right !important;
+        padding-right: 16px;
+    }
+
+    .header__logo, .auth-header__pay_btn,
+    .auth-header__avatar, .auth-header__name {
+        display: none;
+    }
+
+    .auth-header__balance {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 54px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .personal__inner {
+        justify-content: normal;
+        align-items: normal;
+    }
+
+
+    .header__inner {
+        width: 100%;
+    }
+
+    .personal {
+        height: auto;
+        padding-top: 94px;
+    }
+
+    .btn_pc {
+        display: none;
+    }
+
+    .btn_mobile {
+        display: block;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+    .footer_burger {
+        position: absolute !important;
+        bottom: 20px !important;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .auth-header__balance {
+        font-size: 24px;
+    }
+
+    .settings__password_btn .btn__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .settings__image-change_text-mobile {
+        margin-left: 25px;
+    }
+
+    .settings__image-change__text_email {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .settings__image-change {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .settings__password {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .settings__password_input {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+}

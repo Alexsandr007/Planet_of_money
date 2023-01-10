@@ -1,0 +1,29 @@
+
+/* Screen resolution */
+@media screen and (min-width: 1920px) {
+    .inner {
+        padding-left: 320px;
+        padding-right: 320px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    .inner {
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .inner {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+    .inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
